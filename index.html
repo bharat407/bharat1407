@@ -1,0 +1,719 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Kushwah</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="bk.css">
+    <link rel="icon" href="favicon.ico"  type="image/icon type">
+
+    <style data-jss="" data-meta="MuiSvgIcon">
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #3f51b5;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #f50057;
+}
+.MuiSvgIcon-colorAction {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiSvgIcon-colorError {
+  color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1.25rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+}
+</style>
+<style data-jss="" data-meta="MuiTouchRipple">
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiTouchRipple-ripple {
+  opacity: 0;
+  position: absolute;
+}
+.MuiTouchRipple-rippleVisible {
+  opacity: 0.3;
+  animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.MuiTouchRipple-ripplePulsate {
+  animation-duration: 200ms;
+}
+.MuiTouchRipple-child {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.MuiTouchRipple-childLeaving {
+  opacity: 0;
+  animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-childPulsate {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: MuiTouchRipple-keyframes-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-enter {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style>
+<style data-jss="" data-meta="MuiButtonBase">
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    -webkit-print-color-adjust: exact;
+  }
+}
+</style>
+<style data-jss="" data-meta="MuiButton">
+.MuiButton-root {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+.MuiButton-root:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-root:hover.Mui-disabled {
+  background-color: transparent;
+}
+.MuiButton-label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.MuiButton-text {
+  padding: 6px 8px;
+}
+.MuiButton-textPrimary {
+  color: #3f51b5;
+}
+.MuiButton-textPrimary:hover {
+  background-color: rgba(63, 81, 181, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-textSecondary {
+  color: #f50057;
+}
+.MuiButton-textSecondary:hover {
+  background-color: rgba(245, 0, 87, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  padding: 5px 15px;
+}
+.MuiButton-outlined.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiButton-outlinedPrimary {
+  color: #3f51b5;
+  border: 1px solid rgba(63, 81, 181, 0.5);
+}
+.MuiButton-outlinedPrimary:hover {
+  border: 1px solid #3f51b5;
+  background-color: rgba(63, 81, 181, 0.04);
+}
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-outlinedSecondary {
+  color: #f50057;
+  border: 1px solid rgba(245, 0, 87, 0.5);
+}
+.MuiButton-outlinedSecondary:hover {
+  border: 1px solid #f50057;
+  background-color: rgba(245, 0, 87, 0.04);
+}
+.MuiButton-outlinedSecondary.Mui-disabled {
+  border: 1px solid rgba(0, 0, 0, 0.26);
+}
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiButton-contained {
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  background-color: #e0e0e0;
+}
+.MuiButton-contained:hover {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+  background-color: #d5d5d5;
+}
+.MuiButton-contained.Mui-focusVisible {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiButton-contained:active {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiButton-contained.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+.MuiButton-contained:hover.Mui-disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #3f51b5;
+}
+.MuiButton-containedPrimary:hover {
+  background-color: #303f9f;
+}
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #3f51b5;
+  }
+}
+.MuiButton-containedSecondary {
+  color: #fff;
+  background-color: #f50057;
+}
+.MuiButton-containedSecondary:hover {
+  background-color: #c51162;
+}
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #f50057;
+  }
+}
+.MuiButton-disableElevation {
+  box-shadow: none;
+}
+.MuiButton-disableElevation:hover {
+  box-shadow: none;
+}
+.MuiButton-disableElevation.Mui-focusVisible {
+  box-shadow: none;
+}
+.MuiButton-disableElevation:active {
+  box-shadow: none;
+}
+.MuiButton-disableElevation.Mui-disabled {
+  box-shadow: none;
+}
+.MuiButton-colorInherit {
+  color: inherit;
+  border-color: currentColor;
+}
+.MuiButton-textSizeSmall {
+  padding: 4px 5px;
+  font-size: 0.8125rem;
+}
+.MuiButton-textSizeLarge {
+  padding: 8px 11px;
+  font-size: 0.9375rem;
+}
+.MuiButton-outlinedSizeSmall {
+  padding: 3px 9px;
+  font-size: 0.8125rem;
+}
+.MuiButton-outlinedSizeLarge {
+  padding: 7px 21px;
+  font-size: 0.9375rem;
+}
+.MuiButton-containedSizeSmall {
+  padding: 4px 10px;
+  font-size: 0.8125rem;
+}
+.MuiButton-containedSizeLarge {
+  padding: 8px 22px;
+  font-size: 0.9375rem;
+}
+.MuiButton-fullWidth {
+  width: 100%;
+}
+.MuiButton-startIcon {
+  display: inherit;
+  margin-left: -4px;
+  margin-right: 8px;
+}
+.MuiButton-startIcon.MuiButton-iconSizeSmall {
+  margin-left: -2px;
+}
+.MuiButton-endIcon {
+  display: inherit;
+  margin-left: 8px;
+  margin-right: -4px;
+}
+.MuiButton-endIcon.MuiButton-iconSizeSmall {
+  margin-right: -2px;
+}
+.MuiButton-iconSizeSmall > *:first-child {
+  font-size: 18px;
+}
+.MuiButton-iconSizeMedium > *:first-child {
+  font-size: 20px;
+}
+.MuiButton-iconSizeLarge > *:first-child {
+  font-size: 22px;
+}
+</style>
+
+
+  </head>
+  <body>
+    <div class="mag" id="mag" href="#home">
+    <div class="App">
+      <header class="App-header" style="width: auto;">
+        <div class="skillcard" style="width: 95%;" id="index">
+                            <div class="header text-center">
+                              <span class="hireButton"><a href="#home"  style="color: white; text-decoration: none; cursor: pointer;">
+                                     <h4>Home</h4>    </a>
+                                      </span>
+                             <span class="hireButton"><a href="#about"  style="color: white; text-decoration: none; cursor: pointer;">
+                                     <h4>About Me</h4></a>
+                                      </span>
+                                      </span><span class="hireButton"><a href="#edu"  style="color: white; text-decoration: none; cursor: pointer;">
+                                     <h4>Education</h4></a>
+                                      </span>
+
+                                      <span class="hireButton"><a href="#project"  style="color: white; text-decoration: none; cursor: pointer;">
+                                     <h4>Projects</h4>    </a>
+                                      
+                                      <span class="hireButton"><a href="#contact"  style="color: white; text-decoration: none; cursor: pointer;">
+                                     <h4>Contact Me</h4></a>
+                                      </span>
+                            </div>
+                            <div class="description text-center"> <span class="hireButton"><a href="#dow"  style="color: white; text-decoration: none; cursor: pointer;">
+                                     <h4>INDEX</h4></a>
+                                      </span>
+                            </div>
+                          </div>
+                            <br>
+        <img src="Octocat.png" class="App-logo" id="home" alt="logo" />
+        <br />
+        <div style="font-size: xx-large;">Hey, I am</div>
+        <div class="landingPage-name">Bharat Kushwah</div>
+        <br>
+        <div class="text-center p-3">
+          <span class="typedContent">
+            <span class="typed-cursor">
+              <span> I am an Open Source Enthusia </span>
+              |<span> I am a Student </span>|
+              <span> I am a Full-Stack Developer </span>
+            </span>
+          </span>
+          <br />
+          <p class="landingPage-subheading text-center px-3">
+            I am a Software Developer who is passionate about building
+          </p>
+          <p class="landingPage-subheading text-center px-3">
+            amazing softwares and applications to help people across the world.
+          </p>
+          <p class="landingPage-subheading text-center px-3">
+            I write code to build useful stuff !
+          </p>
+          <br>
+          
+
+                  <div class="skillcard" style="margin-inline:auto ; width: 25%; height:auto ;" id="index">
+                            <div class="header text-center">
+                              <div class="rounded-social-buttons">
+                                                <a href="https://twitter.com/BharatK407" target="_blank" rel="noreferrer">
+                                                  <span class="circle-button twitter"></span></a>
+                                                  &nbsp;
+                                                  &nbsp;
+                                                  <a href="https://www.linkedin.com/in/bharat-kushwah-3a2029208/" target="_blank" rel="noreferrer">
+                                                    <span class="circle-button linkedin"></span></a><a href="https://www.instagram.com/bharatkushwah407/" target="_blank" rel="noreferrer"><br><br>
+                                                      <span class="circle-button instagram"></span></a>
+                                                       &nbsp;
+                                                       &nbsp;
+                                                      <a href="https://github.com/bharat407" target="_blank" rel="noreferrer">
+                                                        <span class="circle-button github"></span></a>
+                                                      </div>
+                            </div>
+                            <div class="description text-center" > <span class="hireButton"><a href="#"  style="color: white; text-decoration: none; cursor: pointer;">
+                                     <h4>Social</h4></a>
+                                      </span>
+                            </div>
+                          </div>
+
+
+
+        </div>
+        <div class="aboutPage mt-5"style="
+    width: 100%;
+" id="about"><div class="container"><p class="experiencePage-name text-center pt-4">ABOUT ME</p><div class="row">
+                            <div class="col-md-7 my-2">
+                                <div class="col-md-3 my-2" style="
+    margin-inline-start: auto;
+"><img style="width: auto;" src="Octocat.png" alt="bharat" class="col-md-12 about-avatar">
+                                  <span class="m-5 " >
+                                    <a>
+                                    <a style="width:auto ; " class="btn btn-dark mt-5" href="Resume.pdf" target="_blank" download="" >
+                                      <i class="fa fa-file-pdf-o" aria-hidden="true"></i><span> </span>Download Resume</a></span></div>
+                        <span style="margin-left: 150vh; text-align: center; color:#000000">  <p  style="margin-left: 0vh; align-items: flex-start; text-align: center; color: black;">Okay, so people call me Bharat. I am an Open-Source geek, vegetarian, and adventure sports addict and I like to explore as much as I can - mountains, valleys, deserts, and my life. My body consists of HTML, CSS &amp; JavaScript, which defines me! This defines me as a Full-Stack Web Developer (Front End, Back End, Middleware, Whatever ...)  
+                        </a>
+                          <br><br>
+                            I'm a Software Engineer and a highly motivated, passionate hard-core web developer with experience in developing web applications and my passion is to build and contribute to products that have a potential to create a huge positive impact on the world.<br>
+                            </p>
+                          </span>
+                            </div>
+                            
+                            <div class=" py-5 mx-auto skillcards-wrapper">
+                                <div class="skillcard" style="width:fit-content"><div class="header text-center">
+                                    <h4>HTML/CSS</h4><h4>REACT JS</h4><h4>BOOTSTRAP</h4>
+                                    <h4>MATERIAL UI</h4></div><div class="description text-center">
+                                <h5 style="color: black;">Frontend Technologies</h5></div>
+                          </div><div class="skillcard" style="width:fit-content" >
+                            <div class="header text-center"><h4>DJANGO</h4><h4>NODEJS </h4><h4>EXPRESS</h4>
+                            </div><div class="description text-center"><h5 style="color: black;">Backend Technologies</h5>
+                            </div></div><span class="skillcard" style="width:fit-content"><div class="header text-center">
+                              <h4>MONGO DB</h4><h4>MY SQL</h4></div><div class="description text-center">
+                                <h5 style="color: black;">Database Management</h5></div></span></div></div></div>
+
+<!-- 
+
+
+<div class="experience-section">
+  <p class="experiencePage-name text-center pt-5">EXPERIENCE</p>
+  <p class="experiencePage-subheading text-center">A variety of experience across different organizations</p>
+  <div class="mt-5 vertical-timeline vertical-timeline--animate vertical-timeline--two-columns">
+    <div id="" class="vertical-timeline-element--work vertical-timeline-element">
+      <span class="vertical-timeline-element-icon bounce-in" style="background: rgb(245, 170, 9); color: rgb(255, 255, 255);">
+        </span><div class="vertical-timeline-element-content bounce-in">
+          <div class="vertical-timeline-element-content-arrow"></div>
+         <div id="" class="vertical-timeline-element--work vertical-timeline-element">
+ <div id="" class="vertical-timeline-element--work vertical-timeline-element">
+      <div class="vertical-timeline-element-content bounce-in" style="background: white; color: black; height:auto">
+        <div class="vertical-timeline-element-content-arrow" style="border-right: 7px solid white;  height: 1.99vh">
+      </div><h3 class="vertical-timeline-element-title">SDE Intern</h3>
+        <h4 class="vertical-timeline-element-subtitle">
+          <a href="https://computational-beta.zeblok.com/" target="_blank" rel="noreferrer" style="text-decoration: none; color: rgb(245, 170, 9);">Zeblok Computational Inc. </a>
+           New Jersey, US</h4>
+            <p>  Involved in performing analytics of their data to get meaningful
+             results, end to end testing, platform releases,<br> UI refactoring with backend API's.</p>
+           <span class="vertical-timeline-element-date">Oct'20 - Dec'20</span>
+          </div>
+        </div> -->
+        
+                            <div class="collab">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-md-10">
+                                    <h1 class="hiringPage-subheading  p-5"> May I help you with my knowledge ?</h1>
+                                  </div>
+                                  <div class="col-md-2 p-5"><a href="https://www.linkedin.com/in/bharat-kushwah-3a2029208/" target="_blank" rel="noreferrer">
+                                    <button type="button" class="btn btn-lg">
+                                      <span class="hireButton"><a href="https://www.linkedin.com/in/bharat-kushwah-3a2029208/" target="_blank" style="color: black; text-decoration: none; cursor: pointer;">HIRE ME </a>
+                                      </span></button></a></div></div></div></div>
+                                      <div class="experience-section" id="edu"><p class="experiencePage-name text-center pt-5">EDUCATION</p><p class="experiencePage-subheading text-center">The stuff I am made up of</p><br>
+                                        <div class="vertical-timeline-element-content bounce-in" style="background: white; color: black; height:auto">
+                                          <div class="vertical-timeline-element-content-arrow" style="border-right: 7px solid white; height: 1.99vh"></div>
+                                          <h3 class="vertical-timeline-element-title">B.Tech - Information Technology </h3><h4 class="vertical-timeline-element-subtitle">
+                                            <a href="https://rjit.ac.in/" target="_blank" rel="noreferrer" style="text-decoration: none; color: rgb(245, 170, 9);">Rustamji Institute of Technology</a> Gwalior, India</h4><span class="vertical-timeline-element-date">Nov'20 - Present</span>
+                                          <br><br>
+                                          <h3 class="vertical-timeline-element-title" >Senior Secondary
+                                             </h3><h4 class="vertical-timeline-element-subtitle">
+                                            <a href="https://www.rkmcbsegwl.org/" target="_blank" rel="noreferrer" style="text-decoration: none; color: rgb(245, 170, 9);">
+Ramkrishna Vidya Mandir</a> Gwalior, India</h4><span class="vertical-timeline-element-date">Apr'19 - Apr'20 </span>
+                                       <br><br>
+                                       <h3 class="vertical-timeline-element-title" >Higher Secondary School
+                                             </h3><h4 class="vertical-timeline-element-subtitle">
+                                            <a href="https://no3gwalior.kvs.ac.in/" target="_blank" rel="noreferrer" style="text-decoration: none; color: rgb(245, 170, 9);">
+Kendriya Vidyalaya No.3</a> Gwalior, India</h4><span class="vertical-timeline-element-date">Apr'08 - Apr'18 </span>
+                                             
+
+<br>
+<br>
+</div>
+                                          </div>  
+
+
+
+
+
+
+                                          
+                                     
+                                     <div class="collab"><div class="container"><div class="row"><div class="col-md-2 px-4 py-5"><a href="https://www.linkedin.com/in/bharat-kushwah-3a2029208/" target="_blank" rel="noreferrer"><button type="button" class="btn btn-light btn-lg"><span class="hireButton"> Collab with Me </span></button></a></div><div class="col-md-10 text-right"><h1 class="hiringPage-subheading  px-4 py-5">Looking for Open-Source Collaborations ?</h1></div></div></div></div>
+                                     <br><br>
+
+
+                                     
+                                     <div class="projectPage" id="project"><h1 class="Project-heading text-center pt-3">Projects</h1>
+                                      <p class="project-subheading text-center">The application which I have developed using my knowledge</p>
+                                      <div class=""><div class="row p-5 m-auto ">
+                                              <div class="projectcard dual">
+                                          <div class="header">
+                                            <h3>Meadassist_Ecommerce</h3><br>
+                                            <h5 style="font-size:x-large">
+                                               This project helps people to purchase the medicines online.<br>
+online pharmacies have emerged as an extremely popular.
+<br>Introduced by numerous countries to prevent the virus's spread.
+Get medicines at your doorstep.
+                                            </h5>
+                                          <div>  <h5 style="font-size:x-large; color: black;">TECH  STACK - Django , HTML/CSS/JS </h5></div>
+                                        </div>
+                                      
+                                      <div class="description">
+                                        <a class="MuiButtonBase-root MuiButton-root MuiButton-contained" tabindex="0" aria-disabled="false" href="#" target="_blank">
+                                          <span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium">
+                                            <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                              <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg>
+                                            </span>GitHub</span><span class="MuiTouchRipple-root"></span></a> 
+                                            <a class="MuiButtonBase-root MuiButton-root MuiButton-contained" tabindex="0" aria-disabled="false" href="#">
+                                              <span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium">
+                                                <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                                  <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"></path></svg>
+                                                </span>Demo</span><span class="MuiTouchRipple-root"></span></a></div>
+                                      
+                                      </div>
+
+
+
+
+
+
+
+                                          
+                                          <div class="projectcard dual">
+                                            <div class="header">
+                                              <h3>ToDO</h3><br>
+                                              <h5 style="font-size:x-large"> &nbsp;
+                                              This project helps people to manage the daily task.<br>
+To-Do is a kind of app that generally used to maintain our day-to-day tasks or list everything that we have to do, with the most.
+                                            </h5>
+                                            <div>  <h5 style="font-size: x-large; color: black;">TECH  STACK - NodeJs , ReactJs and &nbsp; &nbsp; HTML/CSS/JS/JQ </h5>
+                                            
+                                            
+                                            
+                                            </div></div>
+                                          
+                                           <div class="description">
+                                        <a class="MuiButtonBase-root MuiButton-root MuiButton-contained" tabindex="0" aria-disabled="false" href="#" target="_blank">
+                                          <span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium">
+                                            <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                              <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg>
+                                            </span>GitHub</span><span class="MuiTouchRipple-root"></span></a> 
+                                            <a class="MuiButtonBase-root MuiButton-root MuiButton-contained" tabindex="0" aria-disabled="false" href="#">
+                                              <span class="MuiButton-label"><span class="MuiButton-startIcon MuiButton-iconSizeMedium">
+                                                <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                                                  <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"></path></svg>
+                                                </span>Demo</span><span class="MuiTouchRipple-root"></span></a></div>
+                                          
+                                          </div>
+                                                    </div></div>       
+                                        </div>
+                          </header>
+                          <div class="footer-section" style="width: auto;" id="contact">
+                            <div class="container">
+                              <div class="footer-widget">
+                                
+                              <div class="footer-cta pt-4 pb-3">
+                                <div class="row">
+                                  <div class="col-xl-4 col-md-4 mb-30">
+                                    <div class="single-cta">
+                                      <i class="fas fa-map-marker-alt"></i>
+                                      <div class="cta-text" style="margin-inline:auto ;">
+                                        <h4 class="landingPage-heading" style="">Find me</h4>
+                                        <span>Gwalior, MadhyaPradesh</span>
+                                      </div>
+                                    </div>
+                                      </div>
+
+                                      <div class="col-xl-4 col-md-4 mb-30">
+                                        <div class="single-cta">
+                                          <i class="fas fa-phone">
+                                        </i>
+                                        <div class="cta-text" style="margin-inline:auto">
+                                          <h4 class="landingPage-heading" style="">Call me</h4>
+                                          <span style="">+91-9516425969</span>
+                                        </div>
+                                      </div>
+                                        </div>
+
+                                        <div class="col-xl-4 col-md-4 mb-30">
+                                          <div class="single-cta">
+                                          <i class="far fa-envelope-open">
+                                          </i>
+                                          <div class="cta-text" style="margin-right:18vh">
+                                            <h4 class="landingPage-heading" style="">Mail me</h4><span>bharatkushwah407gmail.com</span>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      </div>
+                                      </div>
+
+                                        <div class="footer-content pt-3">
+                                          <div class="row"><div class="col-xl-4 col-lg-4 mb-50"><div class="footer-widget">
+                                            <h3 class="landingPage-heading"> Bharat Kushwah </h3>
+                                            <div class="footer-text"><p>I love to connect with people and love to talk with them, help them, discuss with them about life aspects, technologies, adventure sports, etc. </p>
+                                            </div><div class="footer-social-icon"><span class="landingPage-heading">Connect with me</span>
+                                              <div class="rounded-social-buttons">
+                                                <a href="https://twitter.com/BharatK407" target="_blank" rel="noreferrer">
+                                                  <span class="circle-button twitter"></span></a><a href="https://www.linkedin.com/in/bharat-kushwah-3a2029208/" target="_blank" rel="noreferrer">
+                                                    <span class="circle-button linkedin"></span></a><a href="https://www.instagram.com/bharatkushwah407/" target="_blank" rel="noreferrer">
+                                                      <span class="circle-button instagram"></span></a><a href="https://github.com/bharat407" target="_blank" rel="noreferrer">
+                                                        <span class="circle-button github"></span></a>
+                                                      </div></div></div></div>
+                                                          <h1 class="finish"> Thank you <a style="color:#ff0000;"> ♥️ </a> </h1>
+                                                      </div>
+                                                      <div class="skillcard" style="width: 95%;" id="dow">
+                            <div class="header text-center">
+                              <span class="hireButton"><a href="#home"  style="color: white; text-decoration: none; cursor: pointer;">
+                                     <h4>Home</h4>    </a>
+                                      </span>
+                             <span class="hireButton"><a href="#about"  style="color: white; text-decoration: none; cursor: pointer;">
+                                     <h4>About Me</h4></a>
+                                      </span>
+                                      </span><span class="hireButton"><a href="#edu"  style="color: white; text-decoration: none; cursor: pointer;">
+                                     <h4>Education</h4></a>
+                                      </span>
+
+                                      <span class="hireButton"><a href="#project"  style="color: white; text-decoration: none; cursor: pointer;">
+                                     <h4>Projects</h4>    </a>
+                                      
+                                      <span class="hireButton"><a href="#contact"  style="color: white; text-decoration: none; cursor: pointer;">
+                                     <h4>Contact Me</h4></a>
+                                      </span>
+                            </div><div class="description text-center"> <span class="hireButton"><a href="#index"  style="color: white; text-decoration: none; cursor: pointer;">
+                                     <h4>INDEX</h4></a>
+                                      </span>
+                            </div></div>
+                                                         </div>
+                                                      </div></div>
+                                                          <div class="copyright-area">
+                                                            <div class="container">
+                                                              <div class="row">
+                                                                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                                                                  <div class="copyright-text"><p>Copyright © 2023, All Right Reserved  
+                                                                    <a href="" target="_blank" rel="noreferrer">    Bharat Kushwah </a></p></div></div>
+                                                                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                                                                      <p class="landingPage-heading" style="color: rgb(245, 170, 9);">
+                                                                        May the source be with you :) </p></div></div></div></div>          
+                                                          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+                                                          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"><title>Akshay Sharma</title><link href="/static/css/2.2aa38b9c.chunk.css" rel="stylesheet"><link href="/static/css/main.5977de02.chunk.css" rel="stylesheet"><style data-jss="" data-meta="MuiSvgIcon">
+                                                          </style>
+                                                        </div>
+                                                        </div>
+                                                          <script src="/static/django-browser-reload/reload-listener.js" data-worker-script-path="/static/django-browser-reload/reload-worker.js" data-events-path="/__reload__/events/" defer></script>
+                                                        
+                                                        </body>
+</html>
